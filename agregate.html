@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Agregate Module</title>
+  </head>
+  <body>
+    <script type="module">
+      //* mengumpulkan beberapa module menjadi satu
+      import { Person, sayHello, sayGoodBye, sum } from "./script/agregate-module.mjs";
+
+      const person = new Person("Made");
+      person.sayHello("joko");
+
+      sayHello("Kadek");
+      sayGoodBye("Emilia");
+      console.log(sum(10, 10));
+    </script>
+  </body>
+</html>

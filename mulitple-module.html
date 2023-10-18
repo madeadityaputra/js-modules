@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Multiple Module</title>
+  </head>
+  <body>
+    <script type="module">
+      import { company, sum, Company } from "./script/multiple.mjs";
+      import { company as perusahaan, sum as total, Company as Perusahaan } from "./script/multiple2.mjs";
+
+      console.log(company);
+      console.log(sum(5, 5));
+
+      const a = new Company();
+
+      console.log(perusahaan);
+      console.log(total(5, 5));
+
+      const b = new Perusahaan();
+    </script>
+  </body>
+</html>

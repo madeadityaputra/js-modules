@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Object Module</title>
+  </head>
+  <body>
+    <script type="module">
+      import * as emilia from "./script/object-module.mjs";
+      //* jadi emilia ini menjadi object dari seluruh isi dari object-module.mjs
+      //* nama object nya bebas
+
+      console.log(emilia.firstName);
+      console.log(emilia.middleName);
+      console.log(emilia.lastName);
+
+      emilia.hello();
+
+      const person = new emilia.Person();
+      console.log(person);
+    </script>
+  </body>
+</html>
